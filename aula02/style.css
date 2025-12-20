@@ -25,7 +25,7 @@ p {
     color: #331F19;
     font-size: 1.1em;
 }
-button {
+button#tarefa {
     background-color: #60041A;
     color: #F4F0EA;
     padding: 10px 20px;
@@ -36,7 +36,20 @@ button {
     transition: background-color 0.3s ease;
     margin-top: 10px;
 }
-button:hover {
+#tarefa:hover{
+    background-color: #A34743 ;
+}
+#limpar {
+    background-color: #60041A;
+    color: #F4F0EA;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+#limpar:hover {
     background-color: #A34743;
 }
 ul {
