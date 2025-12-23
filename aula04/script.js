@@ -51,5 +51,16 @@ function removerTarefa(i) {
 }
 
 function editarTarefa(i){
-    
+    let tarefaEditada = prompt("Edite a tarefa:")
+    if (tarefaEditada.trim() !== ""){
+        tarefas[i] = tarefaEditada
+        renderizarTarefas()
+    }
+}
+
+function LimparLista() {
+    tarefas.length = 0
+    renderizarTarefas()
+    const mensagem = document.getElementById("mensagem")
+    mensagem.textContent = "Lista de tarefas limpa com sucesso"
 }
