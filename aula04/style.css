@@ -100,11 +100,12 @@ button.editar:hover {
     background-color: #744d41;
 }
 
-.botao_lista {
+#botao_lista {
+    display: none;
     background-color: #60041A;
 }
 
-.botao_lista:hover {
+#botao_lista:hover {
     background-color: #A34743;
     color: #F4F0EA;
 }

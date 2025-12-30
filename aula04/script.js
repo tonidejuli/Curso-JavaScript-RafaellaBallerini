@@ -42,12 +42,15 @@ function renderizarTarefas() {
         novaTarefa.appendChild(botaoRemover)
         novaTarefa.appendChild(botaoEditar)
         listaTarefas.appendChild(novaTarefa)
+        botaolimpar()
+
     }
 }
 
 function removerTarefa(i) {
     tarefas.splice(i, 1)
     renderizarTarefas()
+
 }
 
 function editarTarefa(i){
@@ -57,6 +60,17 @@ function editarTarefa(i){
         renderizarTarefas()
     }
 }
+
+function botaolimpar(){
+    const botaoLimpar = document.getElementById("botao_lista")
+
+    if(listaTarefas.children.length > 0){
+        botaoLimpar.style.display = 'inline-block'
+    } else {
+        botaoLimpar.style.display = 'none'
+    }
+}
+
 
 function LimparLista() {
     tarefas.length = 0
